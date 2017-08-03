@@ -4,7 +4,7 @@
   "description": "a series of probot plugins that welcome new users to your repository",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "probot run"
   },
   "repository": {
     "type": "git",
