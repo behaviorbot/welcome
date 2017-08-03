@@ -20,7 +20,7 @@
     "probot": "^0.8.0",
     "first-pr-merge": "behaviorbot/first-pr-merge",
     "new-pr-welcome": "behaviorbot/new-pr-welcome",
-    "new-issue-welcome": "behaviorbot/new-issue-welcome"
+    "new-issue-welcome": "behaviorbot/new-issue-welcome#fix-name"
   },
   "devDependencies": {
     "eslint-config-probot": ">=0.1.0",
@@ -32,5 +32,12 @@
   "engines": {
     "node": ">= 7.7.0",
     "npm": ">= 4.0.0"
+  },
+  "probot": {
+    "plugins": [
+      "first-pr-merge",
+      "new-pr-welcome",
+      "new-issue-welcome"
+    ]
   }
 }
