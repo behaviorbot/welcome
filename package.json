@@ -1,0 +1,38 @@
+{
+  "name": "welcome",
+  "version": "1.0.0",
+  "description": "a series of probot plugins that welcome new users to your repository",
+  "scripts": {
+    "start": "probot run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behaviorbot/welcome.git"
+  },
+  "author": "hiimbex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/behaviorbot/welcome/issues"
+  },
+  "homepage": "https://github.com/behaviorbot/welcome#readme",
+  "dependencies": {
+    "probot": "^0.8.0",
+    "first-pr-merge": "behaviorbot/first-pr-merge",
+    "new-pr-welcome": "behaviorbot/new-pr-welcome",
+    "new-issue-welcome": "behaviorbot/new-issue-welcome"
+  },
+  "devDependencies": {
+    "localtunnel": "^1.8.3"
+  },
+  "engines": {
+    "node": ">= 7.7.0",
+    "npm": ">= 4.0.0"
+  },
+  "probot": {
+    "plugins": [
+      "first-pr-merge",
+      "new-pr-welcome",
+      "new-issue-welcome"
+    ]
+  }
+}
