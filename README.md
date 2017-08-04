@@ -2,7 +2,27 @@
 
 > a GitHub App built with [probot](https://github.com/probot/probot) that welcomes new users based off maintainer defined comments that should be located in a `.github/config.yml`
 
-Uses a `config.yml` file to check for content of the comments
+The 3 plugins it combines with are [new-issue-welcome](https://github.com/behaviorbot/new-issue-welcome),
+
+<img width="802" alt="screen shot 2017-07-07 at 10 40 26 am" src="https://user-images.githubusercontent.com/13410355/28288851-679f582a-6af5-11e7-8dd8-b85b6c33e16b.png">
+
+
+[new-pr-welcome](https://github.com/behaviorbot/new-issue-welcome),
+
+<img width="801" alt="screen shot 2017-07-17 at 1 31 50 pm" src="https://user-images.githubusercontent.com/13410355/28288547-5f83aa8e-6af4-11e7-9692-eb41d42431e2.png">
+
+and [first-pr-merge](https://github.com/behaviorbot/new-issue-welcome)
+<img width="807" alt="screen shot 2017-07-17 at 1 58 37 pm" src="https://user-images.githubusercontent.com/13410355/28289605-1ab81a76-6af8-11e7-8f78-6a1b3948df36.png">
+
+## Usage
+
+1. Install the bot on the intended repositories. The plugin requires the following **Permissions and Events**:
+- Pull requests: **Read & Write**
+  - [x] check the box for **Pull Request** events
+- Issues: **Read & Write**
+  - [x] check the box for **Issue** events
+
+2. Create a `config.yml` file to check for content of the comments:
 
 ``` yaml
 # Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
@@ -25,3 +45,5 @@ firstPRMergeComment: >
 
 # It is recommend to include as many gifs and emojis as possible
 ```
+
+You can opt out of having the bot comment on first time pull requests, pull request merges, or new issues by not filling in a value for each app's respective field.
