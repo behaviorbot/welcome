@@ -17,13 +17,12 @@ The 3 plugins it combines with are
 
 ## Usage
 
-1. Install the bot on the intended repositories. The plugin requires the following **Permissions and Events**:
-- Pull requests: **Read & Write**
-  - [x] check the box for **Pull Request** events
-- Issues: **Read & Write**
-  - [x] check the box for **Issue** events
+1. [Install the bot](https://github.com/apps/welcome) on the intended repositories. The plugin requires the following **Permissions and Events**:
 
-2. Create a `config.yml` file to check for content of the comments:
+- Pull requests: **Read & Write**
+- Issues: **Read & Write**
+
+2. Create a `.github/config.yml` file to check for content of the comments:
 
 ``` yaml
 # Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
