@@ -17,7 +17,8 @@ The 3 plugins it combines with are
 
 ## Usage
 
-1. Install the bot on the intended repositories. The plugin requires the following **Permissions and Events**:
+1. [Install the bot](https://github.com/apps/welcome) on the intended repositories. The plugin requires the following **Permissions and Events**:
+
 - Pull requests: **Read & Write**
   - [x] check the box for **Pull Request** events
 - Issues: **Read & Write**
