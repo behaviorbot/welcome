@@ -25,6 +25,8 @@ The 3 plugins it combines with are
 2. Create a `.github/config.yml` file to check for content of the comments:
 
 ``` yaml
+# Configuration for welcome - https://github.com/behaviorbot/welcome
+
 # Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
 
 # Comment to be posted to on first time issues
