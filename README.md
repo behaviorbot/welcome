@@ -49,3 +49,5 @@ firstPRMergeComment: >
 ```
 
 You can opt out of having the bot comment on first time pull requests, pull request merges, or new issues by not filling in a value for each app's respective field.
+
+For some examples of content that other people included in their `.github/config` files, check out [Electron's Config File](https://github.com/electron/electron/blob/master/.github/config.yml)
