@@ -5,11 +5,11 @@
 The 3 plugins it combines with are
 ### New Issue Welcome:
 [new-issue-welcome](https://github.com/behaviorbot/new-issue-welcome)
-<img width="802" alt="screen shot 2017-07-07 at 10 40 26 am" src="https://user-images.githubusercontent.com/13410355/28288851-679f582a-6af5-11e7-8dd8-b85b6c33e16b.png">
+<img width="801" alt="screen shot 2017-07-17 at 1 31 50 pm" src="https://user-images.githubusercontent.com/13410355/28288547-5f83aa8e-6af4-11e7-9692-eb41d42431e2.png">
 
 ### New PR Welcome: 
 [new-pr-welcome](https://github.com/behaviorbot/new-pr-welcome)
-<img width="801" alt="screen shot 2017-07-17 at 1 31 50 pm" src="https://user-images.githubusercontent.com/13410355/28288547-5f83aa8e-6af4-11e7-9692-eb41d42431e2.png">
+<img width="802" alt="screen shot 2017-07-07 at 10 40 26 am" src="https://user-images.githubusercontent.com/13410355/28288851-679f582a-6af5-11e7-8dd8-b85b6c33e16b.png">
 
 ### First PR Merge:
 [first-pr-merge](https://github.com/behaviorbot/first-pr-merge)
