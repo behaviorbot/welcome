@@ -1,7 +1,7 @@
 {
   "name": "welcome",
   "version": "1.0.0",
-  "description": "a series of probot plugins that welcome new users to your repository",
+  "description": "a series of probot apps that welcome new users to your repository",
   "scripts": {
     "start": "probot run"
   },
