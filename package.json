@@ -19,7 +19,7 @@
     "first-pr-merge": "github:behaviorbot/first-pr-merge",
     "new-issue-welcome": "github:behaviorbot/new-issue-welcome",
     "new-pr-welcome": "github:behaviorbot/new-pr-welcome",
-    "probot": "^0.8.0"
+    "probot": "^3.0.0"
   },
   "devDependencies": {
     "localtunnel": "^1.8.3"
