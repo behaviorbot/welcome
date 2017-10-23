@@ -7,7 +7,7 @@ The 3 plugins it combines with are
 [new-issue-welcome](https://github.com/behaviorbot/new-issue-welcome)
 <img width="801" alt="screen shot 2017-07-17 at 1 31 50 pm" src="https://user-images.githubusercontent.com/13410355/28288547-5f83aa8e-6af4-11e7-9692-eb41d42431e2.png">
 
-### New PR Welcome: 
+### New PR Welcome:
 [new-pr-welcome](https://github.com/behaviorbot/new-pr-welcome)
 <img width="802" alt="screen shot 2017-07-07 at 10 40 26 am" src="https://user-images.githubusercontent.com/13410355/28288851-679f582a-6af5-11e7-8dd8-b85b6c33e16b.png">
 
@@ -43,9 +43,9 @@ newPRWelcomeComment: >
 
 # Comment to be posted to on pull requests merged by a first time user
 firstPRMergeComment: >
-  Congrats on merging your first pull request! We here at behaviorbot are proud of you! 
+  Congrats on merging your first pull request! We here at behaviorbot are proud of you!
 
-# It is recommend to include as many gifs and emojis as possible!
+# It is recommended to include as many gifs and emojis as possible!
 ```
 
 You can opt out of having the bot comment on first time pull requests, pull request merges, or new issues by not filling in a value for each app's respective field.
