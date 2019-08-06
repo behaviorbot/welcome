@@ -19,10 +19,10 @@
     "first-pr-merge": "github:behaviorbot/first-pr-merge",
     "new-issue-welcome": "github:behaviorbot/new-issue-welcome",
     "new-pr-welcome": "github:behaviorbot/new-pr-welcome",
-    "probot": "7.3.1"
+    "probot": "9.3.0"
   },
   "engines": {
-    "node": ">= 7.7.0",
+    "node": ">= 8.0.0",
     "npm": ">= 4.0.0"
   },
   "probot": {
