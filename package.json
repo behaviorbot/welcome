@@ -32,4 +32,6 @@
       "new-issue-welcome"
     ]
   }
+console.log 'run'
 }
+
