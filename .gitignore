@@ -1,4 +1,7 @@
-.env
 node_modules
-
-.vercel
+npm-debug.log
+*.pem
+!mock-cert.pem
+.env
+coverage
+lib

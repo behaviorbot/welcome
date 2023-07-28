@@ -1,26 +1,32 @@
 {
-  "name": "@probot/example-vercel",
+  "name": "pushkin-probot",
   "version": "1.0.0",
   "private": true,
-  "description": "Probot & Google Cloud Functions example",
-  "scripts": {
-    "start": "probot run ./app.js",
-    "test": "node test.js"
-  },
-  "author": "Gregor Martynus (https://twitter.com/gr2m)",
+  "description": "Customized welcome bot build with Probot",
+  "author": "Adam Yang",
   "license": "ISC",
-  "repository": "github:probot/example-vercel",
+  "homepage": "https://github.com//",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "start": "probot run ./index.js",
+    "test": "jest"
+  },
   "dependencies": {
-    "probot": "^12.2.7"
+    "probot": "^12.2.4"
   },
   "devDependencies": {
-    "nock": "^13.2.9",
-    "smee-client": "^1.2.3",
-    "uvu": "^0.5.6"
+    "jest": "^29.0.0",
+    "nock": "^13.0.5",
+    "smee-client": "^1.2.2"
   },
-  "release": {
-    "branches": [
-      "main"
-    ]
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
