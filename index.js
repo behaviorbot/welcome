@@ -20,6 +20,7 @@ module.exports = (request, response) => {
     response.end();
     return;
   }
+  middleware(request, response);
   // app.log.info("Yay, the app was loaded!");
 
 
