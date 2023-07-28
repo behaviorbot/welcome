@@ -8,10 +8,17 @@
  * @param {import('@vercel/node').NowResponse} response
  */
 const {createNodeMiddleware, createProbot} = require("probot");
-const app = require("./index.js");
-const middleware = createNodeMiddleware(app, { probot: createProbot(),});
+//q: on line 12, I am getting this error: TypeError: appFn is not a function, how do I fix it?
+//a: You need to export a function from your index.js file. This function will be called with the app object, and the request and response objects from the HTTP request. See the example above for more details.
+//q: How do I do that?
+//a: You can use the following code as a starting point:
+module.exports = (request, response) => {
+  const app = require("./index.js");
+  const middleware = createNodeMiddleware(app, { probot: createProbot(),});
+  middleware(request, response);
+};
 
-module.exports = (app, request, response) => {
+module.exports = (app) => {
   
   app.log.info("Yay, the app was loaded!");
 
@@ -29,7 +36,6 @@ module.exports = (app, request, response) => {
     });
     return context.octokit.issues.createComment(prComment)
   })
-  middleware(request, response);
 };  
 
 //q: I am getting this error: TypeError: appFn is not a function, how do I fix it?
