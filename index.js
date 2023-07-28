@@ -8,11 +8,12 @@
  * @param {import('@vercel/node').NowResponse} response
  */
 const {createNodeMiddleware, createProbot} = require("probot");
-const app = require("../index.js");
-const middleware = createNodeMiddleware(app, { probot: createProbot(),});
 
-module.exports = (app) => {
+module.exports = (app, request, response) => {
+
   app.log.info("Yay, the app was loaded!");
+
+  const middleware = createNodeMiddleware(app, { probot: createProbot(),});
 
   app.on("issues.opened", async (context) => {
     const issueComment = context.issue({
@@ -27,6 +28,7 @@ module.exports = (app) => {
     });
     return context.octokit.issues.createComment(prComment)
   })
+  middleware(request, response);
 };
 
 
