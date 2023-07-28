@@ -7,13 +7,13 @@
  * @param {import('@vercel/node').NowRequest} request
  * @param {import('@vercel/node').NowResponse} response
  */
+const {createNodeMiddleware, createProbot} = require("probot");
+const middleware = createNodeMiddleware(app, { probot: createProbot(),});
 
 module.exports = (app, request, response) => {
   
-  const {createNodeMiddleware, createProbot} = require("probot");
   app.log.info("Yay, the app was loaded!");
 
-  const middleware = createNodeMiddleware(app, { probot: createProbot(),});
 
   app.on("issues.opened", async (context) => {
     const issueComment = context.issue({
