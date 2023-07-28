@@ -128,7 +128,7 @@ default_permissions:
 # name: My Probot App
 
 # The homepage of your GitHub App.
-# url: https://example.com/
+url: https://github.com/ayang21/welcome
 
 # A description of the GitHub App.
 # description: Comments on issues and pull requests to remind the user to follow our best practices for pushkin
