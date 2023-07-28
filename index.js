@@ -8,6 +8,7 @@
  * @param {import('@vercel/node').NowResponse} response
  */
 const {createNodeMiddleware, createProbot} = require("probot");
+const app = require("./app");
 const middleware = createNodeMiddleware(app, { probot: createProbot(),});
 
 module.exports = (app, request, response) => {
