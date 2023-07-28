@@ -1,6 +1,4 @@
 /**
- * This is the main entrypoint to your Probot app
- * @param {import('probot').Probot} app
  * 
  * Redirect `GET /` to `/stats`, pass `POST /` to Probot's middleware
  *
@@ -8,10 +6,11 @@
  * @param {import('@vercel/node').NowResponse} response
  */
 const {createNodeMiddleware, createProbot} = require("probot");
+const app = require("./index.js");
+const middleware = createNodeMiddleware(tempApp, { probot: createProbot()});
 
-module.exports = (app, request, response) => {
-  const tempApp = require("./index.js");
-  const middleware = createNodeMiddleware(tempApp, { probot: createProbot(),});
+module.exports = (request, response) => {
+
   app.log.info("Yay, the app was loaded!");
 
 
