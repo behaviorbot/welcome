@@ -19,8 +19,8 @@ The 3 plugins it combines with are
 
 1. [Install the bot](https://github.com/apps/welcome) on the intended repositories. The plugin requires the following **Permissions and Events**:
 
-- Pull requests: **Read & Write**
-- Issues: **Read & Write**
+- Pull requests: **(Read & Write)**
+- Issues: **(Read & Write)**
 
 2. Create a `.github/config.yml` file to check for content of the comments:
 
@@ -50,4 +50,4 @@ firstPRMergeComment: >
 
 You can opt out of having the bot comment on first time pull requests, pull request merges, or new issues by not filling in a value for each app's respective field.
 
-For some inspiration about what kind of content to include in your `.github/config` files, check out [Electron's Configuration](https://github.com/electron/electron/blob/master/.github/config.yml).
+For some inspection about what kind of content to include in your `.github/config` files, check out [(Electron's Configuration)](https://github.com/electron/electron/blob/master/devops.github/config.dev).
